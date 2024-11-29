@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="./styles/client-dashboard.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <header>
+        <h1>Client Dashboard</h1>
+        <div class="user-info">
+          <p>Welcome, User</p>
+          <button>Logout</button>
+        </div>
+      </header>
+
+      <nav class="sidebar">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Payments</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section class="overview">
+          <h2>Project Overview</h2>
+          <div class="projects">
+            <div class="project-card">
+              <h3>Website Redesign</h3>
+              <p>Status: <span class="status in-progress">In Progress</span></p>
+              <p>Deadline: Dec 10, 2024</p>
+            </div>
+            <div class="project-card">
+              <h3>Mobile App Development</h3>
+              <p>Status: <span class="status completed">Completed</span></p>
+              <p>Deadline: Nov 20, 2024</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="messages">
+          <h2>Recent Messages</h2>
+          <div class="message">
+            <p><strong>Freelancer A:</strong> The draft is ready for review.</p>
+            <span>2 hours ago</span>
+          </div>
+          <div class="message">
+            <p>
+              <strong>Freelancer B:</strong> Awaiting your feedback on the
+              design.
+            </p>
+            <span>1 day ago</span>
+          </div>
+        </section>
+      </main>
+    </div>
+     
+  </body>
+</html>
