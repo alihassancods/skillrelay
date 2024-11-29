@@ -1,21 +1,20 @@
 Here's a sample `README.md` file for your Git repository:
 
-```markdown
-# Project Repository
+markdown
+# SkillRelay
+## Its an Open Source Freelance Platform developed in html,css and javascript as First Semester Project.
 
 Welcome to the project repository! This guide provides instructions for setting up and collaborating effectively. The repository contains the initial setup, including three folders: `assets`, `scripts`, `styles`, and standalone `HTML` files.
 
 ## Project Structure
 
-```
-.
 ├── assets/
 ├── scripts/
 ├── styles/
 ├── index.html
 ├── about.html
 └── contact.html
-```
+
 
 ## Getting Started
 
@@ -114,4 +113,4 @@ Each collaborator will create a branch with their name to work on features.
 
 
 Happy coding!
-``` 
+
