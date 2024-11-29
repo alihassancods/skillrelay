@@ -1,6 +1,4 @@
-Here's a sample `README.md` file for your Git repository:
 
-markdown
 # SkillRelay
 ## Its an Open Source Freelance Platform developed in html,css and javascript as First Semester Project.
 
