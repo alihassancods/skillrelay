@@ -1,0 +1,151 @@
+
+.dialog-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px; /* Ensures it doesn't get too wide */
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Softer rounded edges */
+    padding: 20px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dialog-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add consistent spacing between items */
+    font-family: 'Arial', sans-serif;
+}
+
+.close-dialog-btn-gigs {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.thumbnail-section {
+    display: flex;
+    gap: 10px; /* Consistent spacing between thumbnail and button */
+    align-items: center;
+}
+
+.thumbnail-preview {
+    width: 100px;
+    height: 80px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    overflow: hidden;
+}
+
+.upload-btn {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px; /* Slightly larger for better usability */
+    resize: none;
+}
+
+.price-section {
+    display: flex;
+    gap: 10px; /* Adjusted spacing for better alignment */
+    align-items: center;
+}
+
+.save-btn {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #218838;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Ensure proper spacing between skills */
+    margin-top: 10px;
+}
+
+.skills-container .skill {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.skills-container .skill:hover {
+    background-color: #0056b3;
+}
+
+.skills-container .skill span {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .dialog-box {
+        width: 95%; /* Adjust for smaller screens */
+        max-width: 400px;
+    }
+
+    .thumbnail-section {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start;
+    }
+
+    .thumbnail-preview {
+        width: 100%;
+        height: 100px; /* Adjust thumbnail height for small screens */
+    }
+}

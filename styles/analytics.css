@@ -1,0 +1,91 @@
+.dialog-box-analytics {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-content {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+}
+
+.close-dialog-btn-analytics {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.metric {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 30%;
+}
+
+.metric p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.metric h2 {
+    margin: 5px 0 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.graph-container {
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Increased spacing between keywords */
+    margin-top: 15px;
+    justify-content: center; /* Center align the keywords */
+}
+
+.keywords span {
+    background-color: #007BFF; /* Light blue background */
+    color: white; /* White text */
+    padding: 8px 12px; /* Added more padding for better spacing */
+    border-radius: 20px; /* Rounded pill-shaped corners */
+    font-size: 14px;
+    font-weight: bold; /* Make text bold */
+    border: none; /* Remove any border */
+    cursor: pointer; /* Add pointer on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.keywords span:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}

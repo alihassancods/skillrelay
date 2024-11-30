@@ -2,6 +2,7 @@
 const disableScroll = () => {
     document.body.classList.add('no-scroll');
 };
+
 // Additional check if page is refreshed in the middle
 window.addEventListener('beforeunload', () => {
     // Re-enable scroll if the page is being unloaded (user navigates or refreshes)
@@ -54,5 +55,4 @@ tl.from('#laptop',{
         enableScroll();
     }
 })
-
 
