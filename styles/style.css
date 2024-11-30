@@ -13,3 +13,8 @@ body,html{
 .no-scroll-x{
     overflow-x: hidden;
 }
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

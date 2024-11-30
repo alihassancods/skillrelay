@@ -1,14 +1,19 @@
 const dialogBoxAnalytics = document.getElementById("analytics-dialog");
-const openDialogBtnAnalytics = document.querySelector(".open-dialog-btn-analytics");
-const closeDialogBtnAnalytics = document.querySelector(".close-dialog-btn-analytics");
+const openDialogBtnAnalytics = document.querySelectorAll(".open-dialog-btn-analytics");
+const closeDialogBtnAnalytics = document.querySelectorAll(".close-dialog-btn-analytics");
 
-openDialogBtnAnalytics.addEventListener("click", () => {
+// openDialogBtnAnalytics.addEventListener("click", () => {
+//     dialogBoxAnalytics.style.display = "flex";
+// });
+openDialogBtnAnalytics.forEach((btn) => {btn.addEventListener("click", () => {
     dialogBoxAnalytics.style.display = "flex";
-});
-
-closeDialogBtnAnalytics.addEventListener("click", () => {
+});})
+closeDialogBtnAnalytics.forEach((btn) => {btn.addEventListener("click", () => {
     dialogBoxAnalytics.style.display = "none";
-});
+});})
+// closeDialogBtnAnalytics.addEventListener("click", () => {
+//     dialogBoxAnalytics.style.display = "none";
+// });
 
 // Chart.js setup
 const ctx = document.getElementById('analytics-graph').getContext('2d');
