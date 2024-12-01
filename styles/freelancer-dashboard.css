@@ -157,13 +157,18 @@ header {
     }
   }
   /* Profile View Card here  */
+  .icon{
+    font-size: x-large;
+  }
   .profile-card {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 30px 30px;
     background-color: #fff;
     max-width: 700px;
     width: 90%;
@@ -192,7 +197,7 @@ header {
   }
 
   .profile-card .details {
-    flex: 1;
+    /* flex: 1; */
   }
 
   .profile-card .details h3 {
@@ -373,4 +378,10 @@ header {
     width: 100%;
     flex-wrap: wrap;
     gap: 20px;
+  }
+  .metrics-finance{
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px;
   }
