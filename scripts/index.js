@@ -55,4 +55,13 @@ tl.from('#laptop',{
         enableScroll();
     }
 })
-
+const path = document.getElementById("path")
+const fCircle1 = document.getElementById("feature-circle-1")
+const fCircle2 = document.getElementById("feature-circle-2")
+const fCircle3 = document.getElementById("feature-circle-3")
+path.addEventListener("mouseenter",()=>{
+    gsap.to(path,{
+        height : 450,
+        duration : 5
+    })
+})
