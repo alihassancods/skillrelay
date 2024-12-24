@@ -1,0 +1,287 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Dashboard</title>
+    <link rel="stylesheet" href="{% static 'styles/freelancer-dashboard.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/analytics.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/edit-gig.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Freelancer Dashboard</h1>
+        <div class="user-info">
+          <p>Welcome, User</p>
+          <button>Logout</button>
+        </div>
+    </header>
+    <div class="self-details-container flexbox">
+        <div class="profile-header">
+            <div class="profile-section">
+                <span>Your Profile</span>
+              </div>
+              <div class="inbox-section">
+                <button class="inbox-btn">
+                  <i class="fas fa-envelope icon"></i>
+                  <span class="notification-count">99+</span>
+                </button>
+                <button class="notification-btn">
+                  <i class="fas fa-bell icon"></i>
+                  <span class="notification-count">99+</span>
+                </button>
+              </div>
+        </div>
+        <div class="profile-details-self flexbox">
+            <div class="profile-card">
+                <div class="image-container">
+                  <img src="https://via.placeholder.com/120" alt="Profile Image">
+                  <div class="top-rated">Top Rated</div>
+                </div>
+                <div class="details">
+                  <h3>Ali Hassan</h3>
+                  <p>Professional developer with 500 years of experience having Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum error ab distinctio vitae perferendis? Voluptate, ad, necessitatibus eaque delectus temporibus officia, vero minima ab similique libero ea distinctio perferendis nemo!</p>
+                  <div class="skills">
+                    <button>Skill</button>
+                    <button>Skill</button>
+                    <button>Skill</button>
+                  </div>
+                  <button class="edit-button">Edit Profile</button>
+                </div>
+              </div>
+        
+              
+        </div>
+        <h1>Your Gigs</h1>
+        <div class="gigs-section-self flexbox">
+            <div class="gig-card">
+                <div class="thumbnail">thumbnail</div>
+                <div class="details">
+                  <h4>Title of Gig</h4>
+                  <div class="tags">
+                    <div class="tag">Html</div>
+                    <div class="tag">Html</div>
+                    <div class="tag">Html</div>
+                  </div>
+                  <div class="rating">4.9 out of 5 rating</div>
+                  <div class="reviews">1500 reviews</div>
+                </div>
+                <div class="price">
+                  <div class="hourly-rate">1599$/hr</div>
+                </div>
+                <div class="analytics-btn open-dialog-btn-analytics" title="Analytics">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="edit-btn open-dialog-btn-gigs" title="Edit Gig">
+                  <i class="fas fa-edit"></i>
+                </div>
+              </div>
+              <div class="gig-card">
+                <div class="thumbnail">thumbnail</div>
+                <div class="details">
+                  <h4>Title of Gig</h4>
+                  <div class="tags">
+                    <div class="tag">Html</div>
+                    <div class="tag">Html</div>
+                    <div class="tag">Html</div>
+                  </div>
+                  <div class="rating">4.9 out of 5 rating</div>
+                  <div class="reviews">1500 reviews</div>
+                </div>
+                <div class="price">
+                  <div class="hourly-rate">1599$/hr</div>
+                </div>
+                <div class="analytics-btn open-dialog-btn-analytics" title="Analytics">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="edit-btn open-dialog-btn-gigs" title="Edit Gig">
+                  <i class="fas fa-edit"></i>
+                </div>
+              </div>
+              
+              <div class="gig-card">
+                <div class="thumbnail">thumbnail</div>
+                <div class="details">
+                  <h4>Title of Gig</h4>
+                  <div class="tags">
+                    <div class="tag">Html</div>
+                    <div class="tag">Html</div>
+                    <div class="tag">Html</div>
+                  </div>
+                  <div class="rating">4.9 out of 5 rating</div>
+                  <div class="reviews">1500 reviews</div>
+                </div>
+                <div class="price">
+                  <div class="hourly-rate">1599$/hr</div>
+                </div>
+                <div class="analytics-btn open-dialog-btn-analytics" title="Analytics">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="edit-btn open-dialog-btn-gigs" title="Edit Gig">
+                  <i class="fas fa-edit"></i>
+                </div>
+              </div>
+              
+              <div class="gig-card">
+                <div class="thumbnail">thumbnail</div>
+                <div class="details">
+                  <h4>Title of Gig</h4>
+                  <div class="tags">
+                    <div class="tag">Html</div>
+                    <div class="tag">Html</div>
+                    <div class="tag">Html</div>
+                  </div>
+                  <div class="rating">4.9 out of 5 rating</div>
+                  <div class="reviews">1500 reviews</div>
+                </div>
+                <div class="price">
+                  <div class="hourly-rate">1599$/hr</div>
+                </div>
+                <div class="analytics-btn open-dialog-btn-analytics" title="Analytics">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="edit-btn open-dialog-btn-gigs" title="Edit Gig">
+                  <i class="fas fa-edit"></i>
+                </div>
+              </div>
+            
+        </div>
+        <h1>Your Orders in Progress</h1>
+        <div class="order-container">
+            <div class="order-card">
+                <div class="order-image"></div>
+                <div class="order-details">
+                    <p class="order-title">Making a freelance platform in HTML</p>
+                    <p class="order-author">By John Doe</p>
+                </div>
+                <div class="order-price">1599$</div>
+            </div>
+            <div class="order-card">
+                <div class="order-image"></div>
+                <div class="order-details">
+                    <p class="order-title">Making a freelance platform in HTML</p>
+                    <p class="order-author">By John Doe</p>
+                </div>
+                <div class="order-price">1599$</div>
+            </div>
+            <div class="order-card">
+                <div class="order-image"></div>
+                <div class="order-details">
+                    <p class="order-title">Making a freelance platform in HTML</p>
+                    <p class="order-author">By John Doe</p>
+                </div>
+                <div class="order-price">1599$</div>
+            </div>
+            <div class="order-card">
+                <div class="order-image"></div>
+                <div class="order-details">
+                    <p class="order-title">Making a freelance platform in HTML</p>
+                    <p class="order-author">By John Doe</p>
+                </div>
+                <div class="order-price">1599$</div>
+            </div>
+            
+        </div>
+        <h1>Account Finances</h1>
+    <div class="metrics-finance flexbox">
+      <div class="metric">
+          <p>Balance</p>
+          <h2>159k USD</h2>
+      </div>
+      <div class="metric">
+          <p>Pending</p>
+          <h2>6645 USD</h2>
+      </div>
+      <div class="metric">
+          <p>Total Earnt</p>
+          <h2>560k USD</h2>
+      </div>
+  </div>
+    </div>
+    
+    
+      
+    <div id="analytics-dialog" class="dialog-box-analytics">
+        <div class="dialog-content">
+            <button class="close-dialog-btn-analytics">&times;</button>
+            <h1>Analytics Overview</h1>
+            <div class="metrics">
+                <div class="metric">
+                    <p>Impressions</p>
+                    <h2>159k</h2>
+                </div>
+                <div class="metric">
+                    <p>Clicks</p>
+                    <h2>6645</h2>
+                </div>
+                <div class="metric">
+                    <p>Sales</p>
+                    <h2>5600</h2>
+                </div>
+            </div>
+            <div class="graph-container">
+                <canvas id="analytics-graph"></canvas>
+            </div>
+            <h3>Top Keywords</h3>
+            <div class="keywords">
+                <span>Web Development</span>
+                <span>Data Analytics</span>
+                <span>Machine Learning</span>
+                <span>Search Engine Optimization</span>
+                <span>Quantum Computing</span>
+            </div>
+        </div>
+    </div>
+    <div id="gig-dialog" class="dialog-box">
+        <div class="dialog-content">
+            <button class="close-dialog-btn-gigs">&times;</button>
+            <h1>Update Gig</h1>
+
+            <form id="gig-form">
+                <!-- Thumbnail Section -->
+                <div class="thumbnail-section">
+                    <div class="thumbnail-preview">Thumbnail</div>
+                    <label class="upload-btn">
+                        Upload Thumbnail
+                        <input type="file" id="thumbnail-upload" accept="image/*" hidden>
+                    </label>
+                </div>
+
+                <!-- Title Section -->
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Enter title">
+
+                <!-- Skills Section -->
+                <label for="skills">Skills</label>
+                <input type="text" id="skills-input" name="skills" placeholder="Enter skills (comma-separated)">
+                <div id="skills-container" class="skills-container"></div>
+
+                <!-- Description Section -->
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Enter description"></textarea>
+
+                <!-- Price Section -->
+                <label for="price">Price</label>
+                <div class="price-section">
+                    <input type="number" id="price" name="price" placeholder="Enter price">
+                    <select id="price-type" name="price-type">
+                        <option value="fixed">Fixed</option>
+                        <option value="hourly">Hourly</option>
+                    </select>
+                </div>
+
+                <!-- Save Button -->
+                <button type="submit" class="save-btn">Save</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'scripts/freelancer-dashboard.js' %}"></script>
+    <script src="{% static 'scripts/edit-gig.' %}"></script>
+    <script src="{% static 'scripts/analytics.js' %}"></script>
+    <script src="{% static 'scripts/script.js' %}"></script>
+</body>
+</html>
