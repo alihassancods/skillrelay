@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Dashboard</title>
-    <link rel="stylesheet" href="./styles/client-dashboard.css" />
-  </head>
-
-  <body>
-    <div class="dashboard">
-      <header>
+    <link rel="stylesheet" href="styles/client-dashboard.css">
+</head>
+<body>
+    <div class="header">
         <h1>Client Dashboard</h1>
-        <div class="user-info">
-          <p>Welcome, User</p>
-          <button>Logout</button>
-        </div>
-      </header>
-
-      <nav class="sidebar">
-        <ul>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Messages</a></li>
-          <li><a href="#">Payments</a></li>
-          <li><a href="#">Settings</a></li>
-        </ul>
-      </nav>
-
-      <main>
-        <section class="overview">
-          <h2>Project Overview</h2>
-          <div class="projects">
-            <div class="project-card">
-              <h3>Website Redesign</h3>
-              <p>Status: <span class="status in-progress">In Progress</span></p>
-              <p>Deadline: Dec 10, 2024</p>
-            </div>
-            <div class="project-card">
-              <h3>Mobile App Development</h3>
-              <p>Status: <span class="status completed">Completed</span></p>
-              <p>Deadline: Nov 20, 2024</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="messages">
-          <h2>Recent Messages</h2>
-          <div class="message">
-            <p><strong>Freelancer A:</strong> The draft is ready for review.</p>
-            <span>2 hours ago</span>
-          </div>
-          <div class="message">
-            <p>
-              <strong>Freelancer B:</strong> Awaiting your feedback on the
-              design.
-            </p>
-            <span>1 day ago</span>
-          </div>
-        </section>
-      </main>
     </div>
-     
-  </body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Dashboard</a>
+            <a href="#">Projects</a>
+            <a href="#">Messages</a>
+            <a href="#">Payments</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="main-content">
+            <div class="card">
+                <h2>Welcome, Client!</h2>
+                <p>Here's an overview of your recent activity:</p>
+            </div>
+
+            <div class="card">
+                <h2>Active Projects</h2>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Status</th>
+                            <th>Deadline</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website Redesign</td>
+                            <td>In Progress</td>
+                            <td>Dec 31, 2024</td>
+                            <td><button class="button view-project" data-project="Website Redesign">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile App Development</td>
+                            <td>Pending</td>
+                            <td>Jan 15, 2025</td>
+                            <td><button class="button view-project" data-project="Mobile App Development">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="projectModal">
+        <div class="modal-header">
+            <h3 id="modalTitle">Project Details</h3>
+            <span class="modal-close" id="closeModal">&times;</span>
+        </div>
+        <div class="modal-body" id="modalBody">
+            <p>Loading details...</p>
+        </div>
+    </div>
+    <div class="overlay" id="modalOverlay"></div>
+    <script src="scripts/client-dashboard.js"></script>
+</body>
 </html>
