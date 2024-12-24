@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="styles/client-dashboard.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Client Dashboard</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Dashboard</a>
+            <a href="#">Projects</a>
+            <a href="#">Messages</a>
+            <a href="#">Payments</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="main-content">
+            <div class="card">
+                <h2>Welcome, Client!</h2>
+                <p>Here's an overview of your recent activity:</p>
+            </div>
+
+            <div class="card">
+                <h2>Active Projects</h2>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Status</th>
+                            <th>Deadline</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Website Redesign</td>
+                            <td>In Progress</td>
+                            <td>Dec 31, 2024</td>
+                            <td><button class="button view-project" data-project="Website Redesign">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile App Development</td>
+                            <td>Pending</td>
+                            <td>Jan 15, 2025</td>
+                            <td><button class="button view-project" data-project="Mobile App Development">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="projectModal">
+        <div class="modal-header">
+            <h3 id="modalTitle">Project Details</h3>
+            <span class="modal-close" id="closeModal">&times;</span>
+        </div>
+        <div class="modal-body" id="modalBody">
+            <p>Loading details...</p>
+        </div>
+    </div>
+    <div class="overlay" id="modalOverlay"></div>
+    <script src="scripts/client-dashboard.js"></script>
+</body>
+</html>

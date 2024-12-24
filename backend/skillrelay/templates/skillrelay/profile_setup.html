@@ -1,0 +1,13 @@
+{% extends 'skillrelay/base.html' %}
+
+{% block content %}
+    <h2>Setup your {{ user_type|title }} Profile</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Profile</button>
+    </form>
+
+    <a href="{% url 'home' %}">Go back to Home</a>
+{% endblock %}
