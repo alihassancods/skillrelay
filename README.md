@@ -1,17 +1,9 @@
 
 # SkillRelay
-## Its an Open Source Freelance Platform developed in html,css and javascript as First Semester Project.
+## Its an Open Source Freelance Platform developed in Html,Css,Javascript and Django as First Semester Project.
 
-Welcome to the project repository! This guide provides instructions for setting up and collaborating effectively. The repository contains the initial setup, including three folders: `assets`, `scripts`, `styles`, and standalone `HTML` files.
+Welcome to the project repository! This guide provides instructions for setting up and collaborating effectively. The repository contains the initial setup, including two folders: `backend`, `frontend`, and one file for slides.
 
-## Project Structure
-
-├── assets/
-├── scripts/
-├── styles/
-├── index.html
-├── about.html
-└── contact.html
 
 
 ## Getting Started
