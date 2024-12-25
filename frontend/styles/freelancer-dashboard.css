@@ -1,0 +1,387 @@
+header {
+    grid-area: header;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  header button {
+    padding: 5px 10px;
+    background-color: white;
+    color: #4caf50;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+.gig-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    max-width: 60%;
+    width: 40%;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .gig-card .thumbnail {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-right: 15px;
+  }
+
+  .gig-card .details {
+    flex: 1;
+  }
+
+  .gig-card .details h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .gig-card .details .tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .gig-card .details .tags .tag {
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: default;
+  }
+
+  .gig-card .details .rating {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+
+  .gig-card .details .reviews {
+    font-size: 0.8rem;
+    color: #777;
+  }
+
+  .gig-card .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+
+  .gig-card .price .hourly-rate {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .analytics-btn,
+  .edit-btn {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+
+  .analytics-btn {
+    top: 10px;
+    right: 60px;
+    background-color: #ff6384;
+  }
+
+  .analytics-btn:hover {
+    background-color: #ff3b6a;
+  }
+
+  .edit-btn {
+    top: 10px;
+    right: 10px;
+    background-color: #ffc107;
+  }
+
+  .edit-btn:hover {
+    background-color: #e0a800;
+  }
+
+  @media (max-width: 768px) {
+    .gig-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .gig-card .thumbnail {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .gig-card .price {
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    .analytics-btn,
+    .edit-btn {
+      position: static;
+      margin: 5px;
+    }
+  }
+  /* Profile View Card here  */
+  .icon{
+    font-size: x-large;
+  }
+  .profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px;
+    background-color: #fff;
+    max-width: 700px;
+    width: 90%;
+  }
+  .profile-details-self{
+    width: 100%;
+  }
+  .profile-card .image-container {
+    flex-shrink: 0;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .profile-card .top-rated {
+    font-size: 0.8rem;
+    color: #28a745;
+    font-weight: bold;
+  }
+
+  .profile-card .details {
+    /* flex: 1; */
+  }
+
+  .profile-card .details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+
+  .profile-card .details p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .profile-card .skills {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .profile-card .skills button {
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .profile-card .skills button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .profile-card .edit-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .profile-card .edit-button:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .profile-card {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .profile-card .image-container {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    .profile-card .skills {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+/* Progressing Orders From Here  */
+
+  .order-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}       
+.order-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.order-image {
+    width: 60px;
+    height: 60px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.order-details {
+    flex: 1;
+}
+
+.order-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.order-author {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.order-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin-left: 15px;
+}
+.self-details-container{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* More space between profile and buttons */
+  }
+  
+  .profile-section {
+    font-size: 22px; /* Larger font size */
+    font-weight: bold;
+  }
+  
+  .inbox-section {
+    display: flex;
+    gap: 15px; /* More space between buttons */
+    position: relative;
+  }
+  
+  .inbox-btn {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px; /* Larger button size */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .notification-btn {
+    background-color: #d9eaff;
+    border: 1px solid #a6c7f5;
+    border-radius: 8px;
+    width: 60px; /* Increased size */
+    height: 60px; /* Increased size */
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #a4f2a4;
+    color: #fff;
+    font-size: 14px; /* Larger font size */
+    font-weight: bold;
+    border-radius: 50%;
+    width: 25px; /* Larger notification size */
+    height: 25px; /* Larger notification size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  .gigs-section-self{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .metrics-finance{
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px;
+  }
